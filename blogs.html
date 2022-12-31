@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Courses - YogaBar</title>
+  <title>About - YogaBar</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -42,16 +45,17 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="courses.html">Courses</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="tregister.html">Trainers</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Register</a></li>
-          </ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="tregister.html">Trainers</a></li>
+          <li><a class="active" href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Register</a></li>
+        </ul>
 
+          
         
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -61,106 +65,110 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main" data-aos="fade-in">
-
+  <main id="main">
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
+    <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Courses</h2>
+        <h2>About Us</h2>
         <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
       </div>
     </div><!-- End Breadcrumbs -->
+<!--=========Blogs Sectiions========-->
+<section class="section blog-wrap bg-gray">
+  <div class="container">
+      <div class="row">
+<div class="col-lg-6 col-md-6 mb-5">
+  <div class="blog-item">
+    <img src="assets/img/blog/1.jpg" alt="" class="img-fluid rounded">
 
-    <!-- ======= Courses Section ======= -->
-    <section id="courses" class="courses">
-      <div class="container" data-aos="fade-up">
+    <div class="blog-item-content bg-white p-5">
+      <div class="blog-item-meta bg-gray py-1 px-2">
+        <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
+        <span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>5 Comments</span>
+        <span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 28th January</span>
+      </div> 
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="mt-3 mb-3"><a href="blog-single.html">Improve design with typography?</a></h3>
+      <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!</p>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="course-item">
-              <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
-                  <p class="price">$169</p>
+      <a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6 col-md-6 mb-5">
+  <div class="blog-item">
+    <img src="assets/img/blog/2.jpg" alt="" class="img-fluid rounded">
+
+    <div class="blog-item-content bg-white p-5">
+      <div class="blog-item-meta bg-gray py-1 px-2">
+        <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Design</span>
+        <span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>5 Comments</span>
+        <span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 28th January</span>
+      </div>   
+
+      <h3 class="mt-3 mb-3"><a href="blog-single.html">Interactivity connect consumer</a></h3>
+      <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!</p>
+
+      <a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6 col-md-6 mb-5">
+  <div class="blog-item">
+    <img src="assets/img/blog/3.jpg" alt="" class="img-fluid rounded">
+
+    <div class="blog-item-content bg-white p-5">
+      <div class="blog-item-meta bg-gray py-1 px-2">
+        <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Community</span>
+        <span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>5 Comments</span>
+        <span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 28th January</span>
+      </div>  
+
+      <h3 class="mt-3 mb-3"><a href="blog-single.html">Marketing Strategy to bring more affect</a></h3>
+      <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!</p>
+
+      <a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-6 col-md-6 mb-5">
+  <div class="blog-item">
+    <img src="assets/img/blog/4.jpg" alt="" class="img-fluid rounded">
+
+    <div class="blog-item-content bg-white p-5">
+      <div class="blog-item-meta bg-gray py-1 px-2">
+        <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Marketing</span>
+        <span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>5 Comments</span>
+        <span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 28th January</span>
+      </div>  
+
+      <h3 class="mt-3 mb-3"><a href="blog-single.html">Marketing Strategy to bring more affect</a></h3>
+      <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!</p>
+
+      <a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
+    </div>
+  </div>
+</div>
+</div>
+
+      <div class="row justify-content-center mt-5">
+          <div class="col-lg-6 text-center">
+            <nav class="navigation pagination d-inline-block">
+                <div class="nav-links">
+                    <a class="prev page-numbers" href="#">Prev</a>
+                    <span aria-current="page" class="page-numbers current">1</span>
+                    <a class="page-numbers" href="#">2</a>
+                    <a class="next page-numbers" href="#">Next</a>
                 </div>
-
-                <h3><a href="course-details.html">Website Design</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                    <span>Antonio</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;50
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;65
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
-                  <p class="price">$250</p>
-                </div>
-
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;35
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;42
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="course-item">
-              <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Content</h4>
-                  <p class="price">$180</p>
-                </div>
-
-                <h3><a href="course-details.html">Copywriting</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-                    <span>Brandon</span>
-                  </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;20
-                    &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;85
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> <!-- End Course Item-->
-
-        </div>
-
+            </nav>
+          </div>
       </div>
-    </section><!-- End Courses Section -->
+  </div>
+</section>
 
-  </main><!-- End #main -->
+<!--==============Blogs Section End ===========-->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -246,6 +254,28 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--********************************-->
+  <!-- Main jQuery -->
+  <script src="plugins/jquery/jquery.js"></script>
+  <script src="js/contact.js"></script>
+  <!-- Bootstrap 4.3.1 -->
+  <script src="plugins/bootstrap/js/popper.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+ <!--  Magnific Popup-->
+  <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+  <!-- Counterup -->
+  <script src="plugins/counterup/jquery.waypoints.min.js"></script>
+  <script src="plugins/counterup/jquery.counterup.min.js"></script>
+
+  <!-- Google Map -->
+  <script src="plugins/google-map/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+  
+  <script src="js/script.js"></script>
+  <!--************************************-->
 
 </body>
 
