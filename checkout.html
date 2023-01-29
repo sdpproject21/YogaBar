@@ -185,7 +185,7 @@
             </div>
 
             <div class="row">
-              <div class="col-md-7 mb-3">
+              <div class="col-md-3 mb-3">
                 <label for="country">State</label>
                 <select
                   class="custom-select d-block w-100"
@@ -204,7 +204,20 @@
                 </div>
               </div>
 
-              <div class="col-md-5 mb-3">
+              <div class="col-md-3 mb-3">
+                <label for="city">City</label>
+                <select class="custom-select d-block w-100" id="city" required>
+                  <option value="">Choose...</option>
+                  <option>Ahmedabad</option>
+                  <option>Mahesana</option>
+                  <option>Valsad</option>
+                  <option>Banaskatha</option>
+                  <option>Palanpur</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid city.</div>
+              </div>
+
+              <div class="col-md-3 mb-3">
                 <label for="zip">Zip</label>
                 <input
                   type="text"
@@ -219,103 +232,44 @@
               </div>
             </div>
             <hr class="mb-4" />
-            <!--         <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">Save this information for next time</label>
-        </div>
-       <hr class="mb-4">
 
-        <h4 class="mb-3">Payment</h4>
- 
-        <div class="d-block my-3">
-          <div class="custom-control custom-radio">
-            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="credit">Credit card</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="debit">Debit card</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="paypal">PayPal</label>
-          </div>
-        </div> 
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-name">Name on card</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required>
-            <small class="text-muted">Full name as displayed on card</small>
-            <div class="invalid-feedback">
-              Name on card is required
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-number">Credit card number</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required>
-            <div class="invalid-feedback">
-              Credit card number is required
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Expiration</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-            <div class="invalid-feedback">
-              Expiration date required
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="cc-cvv">CVV</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-            <div class="invalid-feedback">
-              Security code required
-            </div>
-          </div>
-        </div>
-        -->
             <button class="btn btn-primary btn-lg btn-block" type="submit">
               Continue to checkout
             </button>
           </form>
         </div>
       </div>
-      <!-- ======= Footer ======= -->
-      <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 footer-contact">
-                <h3 style="margin-top: 20px">YogaBar</h3>
-                <p>
-                  <strong>Phone:</strong> +91 9879034263<br />
-                  <strong>Email:</strong> yogabar@yoga.com<br />
-                </p>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" style="margin-top: 3%">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3 style="margin-top: 20px">YogaBar</h3>
+              <p>
+                <strong>Phone:</strong> +91 9879034263<br />
+                <strong>Email:</strong> yogabar@yoga.com<br />
+              </p>
+            </div>
+            <hr />
+            <div
+              class="me-md-auto text-center text-md-start"
+              style="margin-bottom: 10px"
+            >
+              <div class="copyright" style="margin-left: 40%">
+                &copy; Copyright <strong><span>YogaBar</span></strong
+                >. All Rights Reserved
               </div>
-              <hr />
-              <div
-                class="me-md-auto text-center text-md-start"
-                style="margin-bottom: 10px"
-              >
-                <div class="copyright" style="margin-left: 40%">
-                  &copy; Copyright <strong><span>YogaBar</span></strong
-                  >. All Rights Reserved
-                </div>
-                <div class="credits" style="margin-left: 45%">
-                  Designed by <a href="https://welltronix.com/">welltronix</a>
-                </div>
+              <div class="credits" style="margin-left: 45%">
+                Designed by <a href="https://welltronix.com/">welltronix</a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- End Footer -->
-    </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
     <div id="preloader"></div>
     <a
       href="#"
