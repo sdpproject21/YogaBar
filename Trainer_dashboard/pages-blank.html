@@ -121,7 +121,11 @@
                                 <div class="card-body">
                                     <div class="card-title">
                                         
+                                     
                                             
+                                        <button class="btn btn-success btn-block col-lg-12 mb-3" type="button" data-toggle="modal"
+                                            data-target="#user-form-modal1">Add Course</button>
+           
 
                                             
                                     </div>
@@ -200,6 +204,75 @@
                         </div>
                     </div>
     
+
+                  
+                    <div class="modal fade" role="dialog" tabindex="-1" id="user-form-modal1">
+                      <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Add Course</h5>
+                                  <button type="button" class="close" data-dismiss="modal">
+                                      <span aria-hidden="true">×</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="py-1">
+                                      <form class="requires-validation" novalidate>
+  
+                                          <div class="col-md-12 form-outline mb-4">
+                                              <label for="cname" class="form-label">Course name</label>
+                                             <input class="form-control" type="text" name="name" placeholder="Course Name" required>
+                                             
+                                             <div class="invalid-feedback">Course field cannot be blank!</div>
+                                          </div>
+                                      
+                                          <div class="col-md-6  mb-4">
+                                              <label for="validationCustom01" class="form-label">No of Videos</label>
+                                            <input class="form-control" type="number" name="number" pattern="[0-9]" placeholder="number of videos" required>
+                                            
+                                            <div class="invalid-feedback">No of Videos required</div>
+                                         </div>
+                                      
+                                          <div class="col-md-6  mb-4">
+                                              <label for="validationCustom01" class="form-label">Total Hours</label>
+                                              <input class="form-control" type="number" name="hours" pattern="[0-9]" placeholder="Hours" required>
+                                               
+                                               <div class="invalid-feedback">Total Hours required</div>
+                                          </div>
+                                      
+                                          <div class="col-md-12 form-outline mb-4">
+                                              <label for="validationCustom01" class="form-label">Course Requirement</label>
+                                            <textarea class="form-control" rows="3" placeholder="Course Requirement" required></textarea> 
+                                            
+                                            <div class="invalid-feedback">Course Requirement required</div>
+                                          </div>
+                                        
+                                      
+                                      
+                                          <div class="col-md-12 form-outline mb-4">
+                                              <label for="validationCustom01" class="form-label">Syllabus</label>
+                                            <textarea class="form-control" rows="3" placeholder="Course Syllabus" required></textarea> 
+                                            
+                                            <div class="invalid-feedback">Course Syllabus required</div>
+                                          </div>
+                                      
+                                          <div class="col-md-12 form-outline mb-4">
+                                              <label for="validationCustom01" class="form-label">Description</label>
+                                            <textarea class="form-control" rows="3" placeholder="Course Description" required></textarea> 
+                                            
+                                            <div class="invalid-feedback">Course Description required</div>
+                                          </div>
+                                      
+                                      
+                                          <div class="form-button mt-3">
+                                              <button id="submit" type="submit" class="btn btn-primary">Save</button>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                     <div class="modal fade" role="dialog" tabindex="-1" id="user-form-modal">
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
