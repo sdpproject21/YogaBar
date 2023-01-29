@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="../Trainer_dashboard/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="d-none d-lg-block">Admin</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="bi bi-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="pages-blank.html">
+            <i class="bi bi-journal-text"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <!-- End courses Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">
+            <i class="bi bi-layout-text-window-reverse"></i
+            ><span>Products</span>
+          </a>
+        </li>
+        <!-- End Products Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-bar-chart"></i><span>Trainers</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="" class="nav-content" data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="Tdetails.html">
+                <i class="bi bi-circle"></i><span>Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="request.html">
+                <i class="bi bi-circle"></i><span>Requests</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Charts Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-12">
+            <div class="row">
+              <!-- Sales Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card sales-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Sales <span>| Today</span></h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-cart"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>100</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Sales Card -->
+
+              <!-- Revenue Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card revenue-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Revenue <span>| This Month</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-currency-dollar"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>₹ 5,000</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Revenue Card -->
+
+              <!-- Customers Card -->
+              <div class="col-xxl-4 col-xl-12">
+                <div class="card info-card customers-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Customers <span>| This Year</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>10</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Customers Card -->
+
+              <!-- Recently Added Courses -->
+              <div class="col-12">
+                <div class="card recent-sales overflow-auto">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Recently Added Courses <span></span>
+                    </h5>
+
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">id</th>
+                          <th scope="col">Trainer Name</th>
+                          <th scope="col">Course Name</th>
+                          <th scope="col">Course Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><a href="#">#101</a></th>
+                          <td>Teesha Varlani</td>
+                          <td>
+                            <a href="#" class="text-primary">Yoga couse 1</a>
+                          </td>
+                          <td>₹ 700</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#102</a></th>
+                          <td>Riya Shah</td>
+                          <td>
+                            <a href="#" class="text-primary">Yoga Course 2</a>
+                          </td>
+                          <td>₹ 1,000</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row"><a href="#">#103</a></th>
+                          <td>Sana Sharma</td>
+                          <td>
+                            <a href="#" class="text-primary">Yoga Course 3</a>
+                          </td>
+                          <td>₹ 400</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Recent Sales -->
+
+              <!-- Products -->
+              <div class="col-12">
+                <div class="card top-selling overflow-auto">
+                  <div class="card-body pb-0">
+                    <h5 class="card-title">
+                      Recently Purchased Products <span></span>
+                    </h5>
+
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Preview</th>
+                          <th scope="col">Product</th>
+                          <th scope="col">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <a href="#"
+                              ><img src="assets/img/product-1.jpg" alt=""
+                            /></a>
+                          </th>
+                          <td>
+                            <a href="#" class="text-primary fw-bold"
+                              >Yoga Trainers</a
+                            >
+                          </td>
+                          <td>₹ 999</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <a href="#"
+                              ><img src="assets/img/product-2.jpg" alt=""
+                            /></a>
+                          </th>
+                          <td>
+                            <a href="#" class="text-primary fw-bold"
+                              >Yoga Tracker - Smart Watch</a
+                            >
+                          </td>
+                          <td>₹ 1,199</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <a href="#"
+                              ><img
+                                src="data:image/jpeg;base64,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"
+                                alt=""
+                            /></a>
+                          </th>
+                          <td>
+                            <a href="#" class="text-primary fw-bold"
+                              >Yoga mate</a
+                            >
+                          </td>
+                          <td>₹ 249</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <a href="#"
+                              ><img
+                                src="data:image/jpeg;base64,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"
+                                alt=""
+                            /></a>
+                          </th>
+                          <td>
+                            <a href="#" class="text-primary fw-bold"
+                              >Skipping Ropes</a
+                            >
+                          </td>
+                          <td>₹ 399</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Top Selling -->
+            </div>
+          </div>
+          <!-- End Left side columns -->
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

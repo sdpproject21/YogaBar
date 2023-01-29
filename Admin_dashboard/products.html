@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="../Trainer_dashboard/assets/css/style.css" rel="stylesheet">
+    
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+
+                <span class="d-none d-lg-block">Admin</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="bi bi-house"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+
+            <li class="nav-item">
+                <a class="nav-link " href="pages-blank.html">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <!-- End courses Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Products</span>
+                </a>
+            </li><!-- End Products Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link " data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-bar-chart"></i><span>Trainers</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="charts-nav" class="nav-content  " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="Tdetails.html">
+                            <i class="bi bi-circle"></i><span>Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="request.html">
+                            <i class="bi bi-circle"></i><span>Requests</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Charts Nav -->
+
+        
+
+        </ul>
+
+    </aside><!-- End Sidebar-->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Dashboard</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item "><a href="index.html">Products</a></li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section dashboard">
+            <div class="col-lg-12">
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+                    rel="stylesheet">
+                <div class="container">
+                    <div class="row flex-lg-nowrap">
+
+
+                        <div class="row flex-lg-nowrap">
+                            <div class="col mb-3">
+                                <div class="e-panel card">
+                                    <div class="card-body">
+                                        <div class="card-title" style="margin-left: 80%;">
+
+
+                                            <button class="btn btn-success btn-block col-lg-10 mb-12" type="button"
+                                                data-toggle="modal" data-target="#user-form-modal">Add Product</button>
+
+                                        </div>
+                                        <div class="e-table">
+                                            <div class="table-responsive  mt-3">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+
+                                                            <th>Photo</th>
+                                                            <th class="max-width">Name</th>
+                                                            <th class="sortable">Price</th>
+
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <th class="text-center" scope="row">
+                                                                <a href="#"
+                                                                  ><img src="assets/img/product-1.jpg" height="50px" width="50px" alt=""
+                                                                /></a>
+                                                              </th>
+                                                            <td class="text-nowrap align-middle">Sketchers</td>
+                                                            <td class="text-nowrap align-middle"><span>₹ 500</span></td>
+
+                                                            <td class="text-center align-middle">
+                                                                <div class="btn-group align-top">
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button" data-toggle="modal"
+                                                                        data-target="#user-form-modal">Edit</button>
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button"><i
+                                                                            class="fa fa-trash"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <th class="text-center" scope="row">
+                                                                <a href="#"
+                                                                  ><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSK9KSRNkO2uxcec5aODrUBNytu1R3NsgBVZ40hqD_-Sa18kovIb9JGUx9Ttk5QMkrmyQJp28xn8EQ&usqp=CAc" height="50px" width="50px" alt=""
+                                                                /></a>
+                                                              </th>
+                                                            <td class="text-nowrap align-middle">Skipping Ropes</td>
+                                                            <td class="text-nowrap align-middle"><span>₹ 220</span></td>
+
+                                                            <td class="text-center align-middle">
+                                                                <div class="btn-group align-top">
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button" data-toggle="modal"
+                                                                        data-target="#user-form-modal">Edit</button>
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button"><i
+                                                                            class="fa fa-trash"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <th class="text-center" scope="row">
+                                                                <a href="#"
+                                                                  ><img src="data:image/jpeg;base64,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" height="50px" width="50px" alt=""
+                                                                /></a>
+                                                              </th>
+                                                            <td class="text-nowrap align-middle">Dumbell</td>
+                                                            <td class="text-nowrap align-middle"><span>₹ 300</span></td>
+
+                                                            <td class="text-center align-middle">
+                                                                <div class="btn-group align-top">
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button" data-toggle="modal"
+                                                                        data-target="#user-form-modal">Edit</button>
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button"><i
+                                                                            class="fa fa-trash"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" scope="row">
+                                                                <a href="#"
+                                                                  ><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQDPjtCIKW97-lXAw4qVKSUXgFRMTmxJsQZf91xcP8etX9XTUzAiaZ9DXO57Y5_fK92Nhl4fWkMT9Ag2WFwO1E362zb6jVoPILuoDRoVf8qRcyHzaTMihEKfg&usqp=CAE" height="50px" width="50px" alt=""
+                                                                /></a>
+                                                              </th>
+                                                            <td class="text-nowrap align-middle">YogaMate</td>
+                                                            <td class="text-nowrap align-middle"><span>₹ 200</span></td>
+
+                                                            <td class="text-center align-middle">
+                                                                <div class="btn-group align-top">
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button" data-toggle="modal"
+                                                                        data-target="#user-form-modal1">Edit</button>
+                                                                    <button
+                                                                        class="btn btn-sm btn-outline-secondary badge"
+                                                                        type="button"><i
+                                                                            class="fa fa-trash"></i></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                      
+                                                        
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" role="dialog" tabindex="-1" id="user-form-modal">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Add Product</h5>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="py-1">
+                                            <form class="requires-validation" novalidate>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <input class="form-control" type="text" name="name" pattern="[A-Za-z]"
+                                                        placeholder="Product Name" required>
+                                                    
+                                                    <div class="invalid-feedback">Product field is invalid!</div>
+                                                </div>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <input class="form-control" type="number" name="number"
+                                                        placeholder="Product Price" required>
+                                                    
+                                                    <div class="invalid-feedback">Add price</div>
+                                                </div>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <input class="form-control" type="file" name="image"
+                                                        placeholder="Product Image" required>
+                                                    
+                                                    <div class="invalid-feedback">Image required</div>
+                                                </div>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <textarea class="form-control" rows="5"
+                                                        placeholder="Product Description" required></textarea>
+                                                    
+                                                    <div class="invalid-feedback">Add Description</div>
+                                                </div>
+
+
+                                                <div class="form-button mt-3">
+                                                    <button id="submit" type="submit"
+                                                        class="btn btn-primary">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--==========================================================-->
+                        <div class="modal fade" role="dialog" tabindex="-1" id="user-form-modal1">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Edit Product</h5>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="py-1">
+                                            <form class="requires-validation" novalidate>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <input class="form-control" type="text" name="name" pattern="[A-Za-z]"
+                                                        placeholder="Product Name" required>
+                                                    <div class="valid-feedback">Product field is valid!</div>
+                                                    <div class="invalid-feedback">Product field is invalid!</div>
+                                                </div>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <input class="form-control" type="number" name="number"
+                                                        placeholder="Product Price" required>
+                                                    <div class="valid-feedback">valid!</div>
+                                                    <div class="invalid-feedback">Cannot be blank!</div>
+                                                </div>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <input class="form-control" type="file" name="image"
+                                                        placeholder="Product Image" required>
+                                                    <div class="valid-feedback">valid!</div>
+                                                    <div class="invalid-feedback">cannot be blank!</div>
+                                                </div>
+
+                                                <div class="col-md-12 form-outline mb-4">
+                                                    <textarea class="form-control" rows="5"
+                                                        placeholder="Product Description" required></textarea>
+                                                    <div class="valid-feedback">valid!</div>
+                                                    <div class="invalid-feedback">cannot be blank!</div>
+                                                </div>
+
+
+                                                <div class="form-button mt-3">
+                                                    <button id="submit" type="submit"
+                                                        class="btn btn-primary">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style type="text/css">
+                body {
+                    margin-top: 20px;
+                    background: #f8f8f8
+                }
+            </style>
+            <script type="text/javascript">
+
+            </script>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.requires-validation')
+            Array.from(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
