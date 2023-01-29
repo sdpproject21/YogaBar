@@ -888,16 +888,7 @@ nav.main-menu {
   position: relative;
   border-bottom: solid #eee 1px;
 }
-.main-menu ul > li .sub-down li a::before {
-}
-.main-menu ul > li .sub-down li a:hover {
-  color: #111111;
-}
-.main-menu ul > li .sub-down li a:hover::before {
-}
-.main-menu ul li:first-child {
-  margin-left: 0;
-}
+
 .main-menu ul > li > ul {
   opacity: 0;
   position: absolute;
@@ -958,8 +949,7 @@ nav.main-menu {
   right: 0;
   padding: 15px 0px;
 }
-.sub-full {
-}
+
 .simple-down {
   padding: 15px;
 }
